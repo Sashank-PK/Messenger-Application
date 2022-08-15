@@ -1,0 +1,101 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 0.65;
+}
+
+.Header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+.Headerinfo{
+    flex: 1;
+    padding-left: 15px;
+}
+.Headerinfo > h2{
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+.Headerinfo > p{
+    color: black;
+    padding-left: 35px;
+}
+
+.ChatBody{
+    flex: 1;
+    background-image: url("https://morphelli.com/wp-content/uploads/2020/11/Kids-Batman-Wallpaper-8920-2-247x296.jpg");
+    background-repeat: repeat;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.ChatMessage{
+    position: relative;
+    font-size: 18px;
+    padding: 13px;
+    width: fit-content;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+.MessageRecieved{
+    margin-left: 0;
+    background-color: whitesmoke;
+}
+.MessageSent{
+    margin-left: auto;
+    background-color: beige;
+}
+.MsgTimestamp{
+    position: absolute;
+    align-content: revert;
+    width: 200px;
+    padding-top: 40px;
+    font-size: xx-small;
+    font-weight: 650;
+}
+.MessageRecieved > .MsgTimestamp{
+    left: 15px;
+}
+.MessageSent > .MsgTimestamp{
+    right: -15px;
+}
+.chatterName{
+    position: absolute;
+    top: -15px;
+    font-size: x-small;
+    font-weight: 800;
+}
+.MessageRecieved > .chatterName{
+    left: 15px;
+}
+.MessageSent > .chatterName{
+    right: 15px;
+}
+
+.MessengerInputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-top: 1px solid darkgray;
+    background-color: lightgray;
+}
+.MessengerInputs > form{
+    flex: 1;
+    display: flex;
+}
+.MessengerInputs > form > input{
+    flex: 1;
+    border-radius: 80px;
+    padding: 10px;
+    border: none;
+}
+.MessengerInputs > form > button{
+    display: none;
+}
+.MessengerInputs > .MuiSvgIcon-root{
+    padding: 10px;
+    color: gray;
+}

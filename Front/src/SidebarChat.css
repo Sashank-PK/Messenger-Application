@@ -1,0 +1,16 @@
+.sidebarchatgroup{
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+.sidebarchatgroup:hover{
+    background-color: white;
+}
+.chatgroupinfo{
+    margin-left: 10px;
+}
+.chatgroupinfo > h2{
+    font-size: 17px;
+    margin-bottom: 7px;
+}
