@@ -9,10 +9,10 @@ const port= process.env.PORT || 9000;
 
 //const Pusher = require("pusher");
 const pusher = new Pusher({
-    appId: "1462579",
-    key: "d6bf682dabac7cc2f891",
-    secret: "774dd840b4b10e3684f0",
-    cluster: "us3",
+    appId: "",
+    key: "",
+    secret: "",
+    cluster: "",
     useTLS: true
 });
 
@@ -30,7 +30,7 @@ app.use((req,res, next)=>{
     next();
 });*/
 // DB config
-const connection_url='mongodb+srv://Sashank:sashank01@cluster0.gbxlbpg.mongodb.net/messengerdb?retryWrites=true&w=majority';
+const connection_url='mongodb+srv://';
 mongoose.connect(connection_url)
 /* // since we are using advanced mongoose, the options mentioned are no longer supported
 mongoose.connect(connection_url,{
